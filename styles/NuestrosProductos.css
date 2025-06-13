@@ -1,0 +1,631 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background-color: #000;
+  color: #fff;
+  padding-top: 80px; /* Espacio para el header fijo */
+}
+
+/* Header fijo */
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #000;
+  z-index: 1000;
+  border-bottom: 1px solid #222;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo img {
+  width: 40px;
+  height: 40px;
+}
+
+.logo-text {
+  display: flex;
+  flex-direction: column;
+  color: #ff9e00;
+}
+
+.logo-text strong {
+  font-size: 1.1rem;
+}
+
+.logo-text span {
+  font-size: 0.75rem;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 400;
+  transition: color 0.3s;
+}
+
+.navbar a:hover,
+.navbar a.active {
+  font-weight: 600;
+  border-bottom: 2px solid #ff9e00;
+  padding-bottom: 2px;
+}
+
+.navbar a img {
+  width: 26px;
+  height: 26px;
+  margin-right: 15px;
+  transition: filter 0.3s;
+}
+
+/*PRIMERA SECCION*/
+
+.product-categories {
+  background-color: #1b1b1f;
+  padding: 2rem 1rem;
+  width: 100%;
+}
+
+.categories-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.categories {
+  display: flex;
+  gap: 3rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex: 1;
+}
+
+.categories span {
+  font-weight: 700;
+  color: #ff9e00;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.categories span:hover {
+  color: #ffaa33;
+}
+
+/*Cuadro de búsqueda*/
+.product-categories .search-box {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  border-radius: 30px;
+  padding: 0.3rem 1rem;
+  height: 40px;
+  min-width: 220px;
+}
+
+.product-categories .search-box input {
+  border: none;
+  outline: none;
+  padding: 0.3rem 0.6rem;
+  font-size: 1rem;
+  flex: 1;
+  /*color: #3d0db2;*/
+}
+
+.product-categories .search-box button {
+  background-color: #002060;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.product-categories .search-box button img {
+  width: 40px;
+  height: 40px;
+}
+
+/*SEGUNDA SECCION*/
+
+.hero {
+  background: url("../assets/herd-cows-producing-milk-gruyere-cheese-france-spring (1) 02.jpg")
+    center/cover no-repeat;
+  height: 100vh;
+  color: white;
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 2rem;
+}
+
+.hero-content {
+  max-width: 600px;
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 2rem;
+  border-radius: 10px;
+}
+
+.hero-subtitle {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  line-height: 1.3;
+  font-weight: 900;
+}
+
+.hero h1 .orange {
+  color: #ff9e00;
+}
+
+.hero-text {
+  margin: 1rem 0;
+  font-size: 1rem;
+}
+
+.hero-btn {
+  background-color: #ff9e00;
+  color: black;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 5px;
+  display: inline-block;
+  transition: background 0.3s;
+}
+
+/*TERCERA SESION*/
+
+.product-grid {
+  background-color: #000;
+  padding: 4rem 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 3rem;
+  position: relative;
+}
+
+.product-card {
+  background-color: transparent;
+  text-align: center;
+  max-width: 300px;
+}
+
+.product-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.product-card h3 {
+  color: #ff9e00;
+  margin: 1rem 0 0.5rem;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.buy-button {
+  background-color: #3d0db2;
+  color: #fff;
+  padding: 0.5rem 1.2rem;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 0.9rem;
+  display: inline-block;
+  transition: background 0.3s ease;
+}
+
+.buy-button:hover {
+  background-color: #2a068e;
+}
+
+/*CUARTA SECCION*/
+
+.best-sellers {
+  background-color: #1b1b1f;
+  padding: 4rem 2rem;
+  color: white;
+  text-align: center;
+}
+
+.best-sellers .subtitle {
+  font-size: 0.9rem;
+  color: #ccc;
+  letter-spacing: 1px;
+}
+
+.best-sellers .title {
+  font-size: 2rem;
+  color: #ff9e00;
+  font-weight: 800;
+  margin-bottom: 2rem;
+}
+
+.best-sellers .carousel-container {
+  position: relative;
+  overflow: hidden;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.best-sellers .carousel-track {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.product-slide {
+  flex: 0 0 calc(100% / 3 - 20px);
+  margin-right: 20px;
+  background: transparent;
+  text-align: left;
+}
+
+.product-slide img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.product-info {
+  padding: 0.5rem 0;
+}
+
+.product-info .price {
+  color: #ff9e00;
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.product-info .name {
+  margin: 0.2rem 0;
+  font-size: 1rem;
+}
+
+.product-info .category {
+  font-size: 0.85rem;
+  color: #aaa;
+}
+
+.best-sellers .nav {
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: #ff9e00;
+  cursor: pointer;
+  padding: 0 1rem;
+  transition: transform 0.2s;
+}
+
+.best-sellers .nav:hover {
+  transform: scale(1.2);
+}
+
+.best-sellers .carousel-dots {
+  margin-top: 2rem;
+}
+
+.best-sellers .dot {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  margin: 0 6px;
+  background-color: #fff;
+  border-radius: 50%;
+  opacity: 0.4;
+  transition: background-color 0.3s;
+}
+
+.best-sellers .dot.active {
+  background-color: #ff9e00;
+  opacity: 1;
+}
+
+/*QUINTA SECCION*/
+
+.section-divider-a {
+  height: 5px;
+  background-color: #ff9e00; /* morado oscuro */
+  width: 100%;
+}
+
+/*SEXTA SESION*/
+
+.product-directory {
+  background-color: #000;
+  color: #fff;
+  padding: 4rem 2rem;
+}
+
+.directory-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.category-column {
+  flex: 1 1 200px;
+  min-width: 200px;
+}
+
+.category-column h3 {
+  color: #ff9e00;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.category-column strong {
+  display: block;
+  margin: 1rem 0 0.5rem;
+  font-weight: 700;
+}
+
+.category-column ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1rem;
+}
+
+.category-column ul li {
+  margin-bottom: 0.4rem;
+}
+
+.category-column ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 0.9rem;
+  transition: color 0.3s;
+}
+
+.category-column ul li a:hover {
+  color: #ff9e00;
+}
+
+/*SEPTIMA SECCION*/
+.section-divider {
+  height: 5px;
+  background-color: #3d0db2; /* morado oscuro */
+  width: 100%;
+}
+
+/*footer*/
+footer {
+  background-color: #000;
+  color: #fff;
+  padding: 2rem 1.5rem 0;
+  font-family: "Inter", sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-left {
+  flex: 1 1 300px;
+  margin-bottom: 1.5rem;
+}
+
+.logo-footer {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 1rem;
+}
+
+.logo-footer img {
+  width: 40px;
+  height: 40px;
+}
+
+.logo-text {
+  display: flex;
+  flex-direction: column;
+  color: #ff9e00;
+}
+
+.logo-text strong {
+  font-size: 1.2rem;
+}
+
+.logo-text span {
+  font-size: 0.8rem;
+}
+
+.footer-left p {
+  margin: 0.5rem 0 1rem;
+  font-size: 0.95rem;
+  max-width: 400px;
+}
+
+.footer-left hr {
+  border: none;
+  border-top: 3px solid #ff9e00;
+  width: 100%;
+  max-width: 450px;
+  margin: 1rem 0;
+}
+
+.social-icons a img {
+  width: 26px;
+  height: 26px;
+  margin-right: 15px;
+  transition: filter 0.3s;
+}
+
+.social-icons a:hover img {
+  filter: brightness(0.8) sepia(1) hue-rotate(10deg) saturate(2);
+}
+
+.footer-right {
+  flex: 1 1 200px;
+  margin-bottom: 1.5rem;
+}
+
+.footer-right h3 {
+  color: #ff9e00;
+  margin-bottom: 1rem;
+}
+
+.footer-right ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-right ul li {
+  margin-bottom: 0.5rem;
+}
+
+.footer-right ul li a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-right ul li a:hover {
+  color: #ff9e00;
+}
+
+/* Footer Bottom */
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 3px solid #ff9e00;
+  padding: 1rem 1rem 1.5rem;
+  font-size: 0.9rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-links a {
+  margin-left: 1rem;
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  color: #ff9e00;
+}
+
+.whatsapp-icon {
+  position: fixed;
+  bottom: 1.5rem;
+  right: 1.5rem;
+  width: 50px;
+  height: 50px;
+  z-index: 999;
+  transition: transform 0.3s;
+}
+
+.whatsapp-icon:hover {
+  transform: scale(1.1);
+}
+
+.whatsapp-icon img {
+  width: 100%;
+  height: auto;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .categories-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .categories {
+    justify-content: flex-start;
+    gap: 1rem 2rem;
+  }
+
+  .product-categories .search-box {
+    align-self: flex-end;
+    margin-top: 1rem;
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .product-card {
+    max-width: 90%;
+  }
+
+  .product-slide {
+    flex: 0 0 100%;
+    margin-right: 0;
+  }
+
+  .best-sellers .carousel-track {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .directory-container {
+    flex-direction: column;
+    gap: 3rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero h1 {
+    font-size: 1.6rem;
+  }
+
+  .hero-btn {
+    font-size: 0.9rem;
+    padding: 0.5rem 1rem;
+  }
+
+  .categories span {
+    font-size: 0.95rem;
+  }
+
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
