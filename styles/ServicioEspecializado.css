@@ -84,7 +84,7 @@ header {
   transition: filter 0.3s;
 }
 
-/*PRIMERA SECCION*/
+/*SECCION-VIDEO*/
 
 .video-section {
   position: relative;
@@ -459,7 +459,7 @@ header {
 }
 
 .importer-card img {
-  width: 80px;
+  width: 250px;
   height: auto;
   margin-bottom: 0.5rem;
 }
