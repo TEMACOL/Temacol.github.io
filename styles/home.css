@@ -8,7 +8,8 @@ body {
   font-family: "Inter", sans-serif;
   background-color: #000;
   color: #fff;
-  padding-top: 80px; /* Espacio para el header fijo */
+  padding-top: 80px;
+  /* Espacio para el header fijo */
 }
 
 /* Header fijo */
@@ -56,7 +57,7 @@ header {
   font-size: 0.75rem;
 }
 
-/*BARRA*/
+/*Barra*/
 
 .navbar {
   display: flex;
@@ -86,7 +87,49 @@ header {
   transition: filter 0.3s;
 }
 
-/*PRIMERA SECCION*/
+/* Buscar en header */
+
+.search-box-header {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  border-radius: 30px;
+  padding: 0.3rem 1rem;
+  height: 42px;
+  gap: 0.5rem;
+  position: absolute;
+  right: 2rem;
+  top: 1rem;
+  z-index: 1100;
+}
+
+.search-box-header input {
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  background: transparent;
+  width: 150px;
+  color: #000;
+}
+
+.search-box-header button {
+  background-color: #3d0db2;
+  border: none;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.search-box-header button img {
+  width: 20px;
+  height: 20px;
+}
+
+/*Primer bloque*/
 
 .hero {
   background: url("../assets/herdn-cows-producing-milk-gruyere-cheese-france-spring.jpg")
@@ -142,39 +185,7 @@ header {
   background-color: #e28c00;
 }
 
-/* Cuadro de búsqueda */
-.search-box {
-  position: absolute;
-  top: 2rem;
-  right: 2rem;
-  display: flex;
-  background: white;
-  border-radius: 25px;
-  overflow: hidden;
-  height: 45px;
-}
-
-.search-box input {
-  border: none;
-  padding: 0 1rem;
-  outline: none;
-  font-size: 1rem;
-}
-
-.search-box button {
-  background-color: #002060;
-  color: white;
-  border: none;
-  padding: 0 1rem;
-  cursor: pointer;
-}
-
-.search-box button img {
-  width: 30px; /* Ajusta el tamaño según lo necesites */
-  height: 30px;
-}
-
-/*SEGUNDA SECCION*/
+/*Segundo bloque*/
 
 .projects {
   background-color: #000;
@@ -287,7 +298,7 @@ header {
   opacity: 1;
 }
 
-/*TERCERA SECCION*/
+/*Tercer bloque*/
 
 .video-section {
   position: relative;
@@ -354,7 +365,7 @@ header {
   background-color: black;
 }
 
-/* CUARTA SECCION*/
+/* Cuarto bloque*/
 
 .blog {
   background-color: #000;
@@ -433,7 +444,7 @@ header {
   margin-right: 4px;
 }
 
-/*QUINTA SECCION*/
+/*Quinto bloque*/
 
 .brands {
   background-color: #1b1b1f;
@@ -488,14 +499,17 @@ header {
   position: relative;
 }
 
-/*SEXTA SESION*/
+/*Sexto bloque*/
+
 .section-divider {
   height: 5px;
-  background-color: #3d0db2; /* morado oscuro */
+  background-color: #3d0db2;
+  /* morado oscuro */
   width: 100%;
 }
 
 /*footer*/
+
 footer {
   background-color: #000;
   color: #fff;
@@ -597,7 +611,8 @@ footer {
   color: #ff9e00;
 }
 
-/* Footer Bottom */
+/*Footer Bottom*/
+
 .footer-bottom {
   display: flex;
   justify-content: space-between;
@@ -619,7 +634,7 @@ footer {
   color: #ff9e00;
 }
 
-/*BOTON DE WHATSAPP*/
+/*Boton de whatsapp*/
 
 .whatsapp-icon {
   position: fixed;
@@ -640,7 +655,7 @@ footer {
   height: auto;
 }
 
-/*RESPONSIVE*/
+/*Responsive*/
 
 @media (max-width: 1024px) {
   .container {
@@ -654,6 +669,15 @@ footer {
     gap: 1rem;
     align-items: center;
     width: 100%;
+  }
+
+  .search-box-header {
+    position: relative;
+    right: 0;
+    top: 0;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    align-self: flex-end;
   }
 
   .hero {
@@ -747,6 +771,16 @@ footer {
 }
 
 @media (max-width: 480px) {
+  .search-box-header input {
+    width: 100px;
+    font-size: 0.85rem;
+  }
+
+  .search-box-header {
+    justify-content: flex-end;
+    padding: 0.25rem 0.8rem;
+  }
+
   .hero h1 {
     font-size: 1.5rem;
   }

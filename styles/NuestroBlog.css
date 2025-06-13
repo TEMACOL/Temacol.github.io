@@ -84,44 +84,32 @@ header {
   transition: filter 0.3s;
 }
 
-/*PRIMERA SECCION*/
+/* Buscar en header */
 
-.blog-search-section {
-  padding: 2rem;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-}
-
-.blog-search-container {
-  max-width: 1200px;
-  width: 100%;
-  display: flex;
-  justify-content: flex-end;
-}
-
-.search-box-blog {
+.search-box-header {
   display: flex;
   align-items: center;
   background-color: white;
   border-radius: 30px;
   padding: 0.3rem 1rem;
-  height: 45px;
-  width: 250px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  height: 42px;
+  gap: 0.5rem;
+  position: absolute;
+  right: 2rem;
+  top: 1rem;
+  z-index: 1100;
 }
 
-.search-box-blog input {
+.search-box-header input {
   border: none;
   outline: none;
   font-size: 1rem;
-  padding: 0 0.6rem;
-  flex: 1;
   background: transparent;
-  color: #3d0db2;
+  width: 150px;
+  color: #000;
 }
 
-.search-box-blog button {
+.search-box-header button {
   background-color: #3d0db2;
   border: none;
   border-radius: 50%;
@@ -133,12 +121,12 @@ header {
   cursor: pointer;
 }
 
-.search-box-blog button img {
+.search-box-header button img {
   width: 20px;
   height: 20px;
 }
 
-/*SEGUNDA SECCION*/
+/*Primer bloque*/
 
 .blog-section {
   padding: 4rem 2rem;
@@ -296,7 +284,7 @@ header {
   background-color: #2a068e;
 }
 
-/*TERCERA SECCION*/
+/*Segundo bloque*/
 .section-divider {
   height: 5px;
   background-color: #3d0db2; /* morado oscuro */
@@ -427,7 +415,7 @@ footer {
   color: #ff9e00;
 }
 
-/*BOTON DE WHATSAPP*/
+/*Boton whatsapp*/
 
 .whatsapp-icon {
   position: fixed;
@@ -449,6 +437,17 @@ footer {
 }
 
 /* Responsive */
+@media (max-width: 1024px) {
+.search-box-header {
+  position: relative;
+  right: 0;
+  top: 0;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  align-self: flex-end;
+}
+}
+
 @media (max-width: 768px) {
   .blog-search-container {
     justify-content: center;
@@ -460,5 +459,17 @@ footer {
 
   .search-box-blog input {
     font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .search-box-header input {
+    width: 100px;
+    font-size: 0.85rem;
+  }
+
+  .search-box-header {
+    justify-content: flex-end;
+    padding: 0.25rem 0.8rem;
   }
 }

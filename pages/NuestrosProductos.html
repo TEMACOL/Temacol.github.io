@@ -1,493 +1,505 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>NuestrosProductos-Temacol</title>
-    <link rel="stylesheet" href="../styles/NuestrosProductos.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap"
-      rel="stylesheet"
-    />
-    <script
-      src="https://kit.fontawesome.com/a2c1f2d409.js"
-      crossorigin="anonymous"
-    ></script>
-  </head>
-  <body>
-    <!--ENCABEZADO - HEADER-->
-    <header>
-      <div class="container">
-        <div class="logo">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NuestrosProductos-Temacol</title>
+  <link rel="stylesheet" href="../styles/NuestrosProductos.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/a2c1f2d409.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <!--INICIO-ENCABEZADO-HEADER-->
+  <header>
+    <div class="container">
+      <div class="logo">
+        <img src="../assets/LogoHome.png" alt="Logo Temacol" />
+        <div class="logo-text">
+          <strong>Temacol</strong>
+          <span>Eficiencia a tu servicio</span>
+        </div>
+      </div>
+      <nav class="navbar">
+        <a href="../index.html">Inicio</a>
+        <a href="../pages/NuestrosProductos.html" class="active">Nuestros productos</a>
+        <a href="../pages/ServicioEspecializado.html">Servicio especializado</a>
+        <a href="../pages/NuestroBlog.html">Nuestro blog</a>
+        <a href="../pages/QuienesSomos.html">¿Quiénes somos?</a>
+        <a href="../pages/Contacto.html">Contacto</a>
+        <a href="https://facebook.com/" target="_blank"><img src="../assets/LogoLogin.png" alt="Contacto" /></a>
+        <a href="https://facebook.com/" target="_blank"><img src="../assets/LogoCarrito.png" alt="Contacto" /></a>
+      </nav>
+      <!--BOTON-BUSQUEDA-->
+      <div class="search-box-header">
+        <input type="text" placeholder="Buscar" />
+        <button>
+          <img src="../assets/LogoBuscar.png" alt="Buscar" />
+        </button>
+      </div>
+    </div>
+  </header>
+  <!--FIN-ENCABEZADO-HEADER-->
+  <!--INICIO-PRIMER-BLOQUE-->
+  <section class="product-categories">
+    <div class="categories-container">
+      <div class="categories">
+        <span>Alimentación y farmacia</span>
+        <span>Ordeño</span>
+        <span>Electrónicos</span>
+        <span>Higiene y salud</span>
+        <span>Dotaciones</span>
+      </div>
+    </div>
+  </section>
+  <!--FIN-PRIMER-BLOQUE-->
+  <!--INICIO-SEGUNDO-BLOQUE-->
+  <section class="hero">
+    <div class="hero-content">
+      <p class="hero-subtitle">Lorem Ipsum</p>
+      <h1>
+        <span class="orange">Lorem Ipsum</span><br />
+        es simplemente el<br />
+        texto de relleno
+      </h1>
+      <p class="hero-text">
+        Lorem Ipsum es simplemente el texto de relleno de las imprentas y
+        archivos de texto.
+      </p>
+      <a href="#" class="hero-btn">Lorem Ipsum</a>
+    </div>
+  </section>
+  <!--FIN-SEGUNDO-BLOQUE-->
+  <!--INICIO-TERCER-BLOQUE-->
+  <section class="product-grid">
+    <div class="product-card">
+      <img src="../assets/cow-milking-facility-mechanized-milking-equipment.B.jpg" alt="Producto 1">
+      <h3>Concentrados</h3>
+      <a href="https://www.youtube.com" target="_blank" class="buy-button">Comprar ahora</a>
+    </div>
+    <div class="product-card">
+      <img
+        src="../assets/milking-machine-close-up-milk-production-home-farm-replacement-manual-labor-with-automatic-machines.B.jpg"
+        alt="Producto 2">
+      <h3>Sellantes de pezones</h3>
+      <a href="https://www.youtube.com" target="_blank" class="buy-button">Comprar ahora</a>
+    </div>
+    <div class="product-card">
+      <img src="../assets/close-up-view-legs-farmer-working-with-fresh-grass-animal-barn.B.jpg" alt="Producto 3">
+      <h3>Ecógrafos</h3>
+      <a href="https://www.youtube.com" target="_blank" class="buy-button">Comprar ahora</a>
+    </div>
+  </section>
+  <!--FIN-TERCER-BLOQUE-->
+  <!--INICIO-CUARTO-BLOQUE-->
+  <section class="best-sellers">
+    <p class="subtitle">CONOZCA</p>
+    <h2 class="title">Productos más vendidos</h2>
+    <div class="carousel-container">
+      <button class="nav prev">&#10094;</button>
+      <div class="carousel-track">
+        <!-- Ejemplo de tarjeta (duplicar para cliente 1 a 20) -->
+        <!--TARJETA-->
+        <div class="product-slide">
+          <img src="../assets/cattle-grazing-meadow.B.jpg" alt="Producto 1" />
+          <div class="product-info">
+            <span class="price">$ 78.500</span>
+            <p class="name">Depositos de vacio</p>
+            <span class="category">Ordeño</span>
+          </div>
+        </div>
+        <!--TARJETA-->
+        <div class="product-slide">
+          <img src="../assets/close-up-view-legs-farmer-working-with-fresh-grass-animal-barn.B.jpg" alt="Producto 2" />
+          <div class="product-info">
+            <span class="price">$ 78.500</span>
+            <p class="name">Depositos de vacio</p>
+            <span class="category">Ordeño</span>
+          </div>
+        </div>
+        <!--TARJETA-->
+        <div class="product-slide">
+          <img src="../assets/cow-milking-facility-mechanized-milking-equipment.B.jpg" alt="Producto 3" />
+          <div class="product-info">
+            <span class="price">$ 78.500</span>
+            <p class="name">Depositos de vacio</p>
+            <span class="category">Ordeño</span>
+          </div>
+        </div>
+        <!--TARJETA-->
+        <div class="product-slide">
+          <img src="../assets/cown-pasture-generative.B.jpg" alt="Producto 4" />
+          <div class="product-info">
+            <span class="price">$ 78.500</span>
+            <p class="name">Depositos de vacio</p>
+            <span class="category">Ordeño</span>
+          </div>
+        </div>
+        <!--TARJETA-->
+        <div class="product-slide">
+          <img src="../assets/cow-pasture-generative.B.jpg" alt="Producto 5" />
+          <div class="product-info">
+            <span class="price">$ 78.500</span>
+            <p class="name">Depositos de vacio</p>
+            <span class="category">Ordeño</span>
+          </div>
+        </div>
+        <!--TARJETA-->
+        <div class="product-slide">
+          <img src="../assets/cows-eating-lush-grass-green-field-front-fuji-mountain-japan.B.jpg" alt="Producto 6" />
+          <div class="product-info">
+            <span class="price">$ 78.500</span>
+            <p class="name">Depositos de vacio</p>
+            <span class="category">Ordeño</span>
+          </div>
+        </div>
+        <!--TARJETA-->
+        <div class="product-slide">
+          <img src="../assets/domestic-animals-eating-hay-cattle-farm.B.jpg" alt="Producto 7" />
+          <div class="product-info">
+            <span class="price">$ 78.500</span>
+            <p class="name">Depositos de vacio</p>
+            <span class="category">Ordeño</span>
+          </div>
+        </div>
+        <!--TARJETA-->
+        <div class="product-slide">
+          <img src="../assets/herd-cows-grazing-pasture-daytime.B.jpg" alt="Producto 8" />
+          <div class="product-info">
+            <span class="price">$ 78.500</span>
+            <p class="name">Depositos de vacio</p>
+            <span class="category">Ordeño</span>
+          </div>
+        </div>
+        <!--TARJETA-->
+        <div class="product-slide">
+          <img src="../assets/herd-cows-producing-milk-gruyere-cheese-france-spring.B.jpg" alt="Producto 9" />
+          <div class="product-info">
+            <span class="price">$ 78.500</span>
+            <p class="name">Depositos de vacio</p>
+            <span class="category">Ordeño</span>
+          </div>
+        </div>
+        <!--TARJETA-->
+        <div class="product-slide">
+          <img src="../assets/herdn-cows-producing-milk-gruyere-cheese-france-spring.B.jpg" alt="Producto 10" />
+          <div class="product-info">
+            <span class="price">$ 78.500</span>
+            <p class="name">Depositos de vacio</p>
+            <span class="category">Ordeño</span>
+          </div>
+        </div>
+        <!--TARJETA-->
+        <div class="product-slide">
+          <img
+            src="../assets/milking-machine-close-up-milk-production-home-farm-replacement-manual-labor-with-automatic-machines.B.jpg"
+            alt="Producto 11" />
+          <div class="product-info">
+            <span class="price">$ 78.500</span>
+            <p class="name">Depositos de vacio</p>
+            <span class="category">Ordeño</span>
+          </div>
+        </div>
+        <!--TARJETA-->
+        <div class="product-slide">
+          <img src="../assets/panoramic-view-black-white-cow-green-grass.B.jpg" alt="Producto 12" />
+          <div class="product-info">
+            <span class="price">$ 78.500</span>
+            <p class="name">Depositos de vacio</p>
+            <span class="category">Ordeño</span>
+          </div>
+        </div>
+        <!--TARJETA-->
+        <div class="product-slide">
+          <img src="../assets/panoramic-view-brown-cows-french-country.B.jpg" alt="Producto 13" />
+          <div class="product-info">
+            <span class="price">$ 78.500</span>
+            <p class="name">Depositos de vacio</p>
+            <span class="category">Ordeño</span>
+          </div>
+        </div>
+        <!--TARJETA-->
+        <div class="product-slide">
+          <img src="../assets/photorealistic-view-cow-grazing-outdoors.B.jpg" alt="Producto 14" />
+          <div class="product-info">
+            <span class="price">$ 78.500</span>
+            <p class="name">Depositos de vacio</p>
+            <span class="category">Ordeño</span>
+          </div>
+        </div>
+        <!--TARJETA-->
+        <div class="product-slide">
+          <img src="../assets/cattle-grazing-meadow.B.jpg" alt="Producto 15" />
+          <div class="product-info">
+            <span class="price">$ 78.500</span>
+            <p class="name">Depositos de vacio</p>
+            <span class="category">Ordeño</span>
+          </div>
+        </div>
+        <!--TARJETA-->
+        <div class="product-slide">
+          <img src="../assets/close-up-view-legs-farmer-working-with-fresh-grass-animal-barn.B.jpg" alt="Producto 16" />
+          <div class="product-info">
+            <span class="price">$ 78.500</span>
+            <p class="name">Depositos de vacio</p>
+            <span class="category">Ordeño</span>
+          </div>
+        </div>
+        <!--TARJETA-->
+        <div class="product-slide">
+          <img src="../assets/cow-milking-facility-mechanized-milking-equipment.B.jpg" alt="Producto 17" />
+          <div class="product-info">
+            <span class="price">$ 78.500</span>
+            <p class="name">Depositos de vacio</p>
+            <span class="category">Ordeño</span>
+          </div>
+        </div>
+        <!--TARJETA-->
+        <div class="product-slide">
+          <img src="../assets/cown-pasture-generative.B.jpg" alt="Producto 18" />
+          <div class="product-info">
+            <span class="price">$ 78.500</span>
+            <p class="name">Depositos de vacio</p>
+            <span class="category">Ordeño</span>
+          </div>
+        </div>
+        <!--TARJETA-->
+        <div class="product-slide">
+          <img src="../assets/cow-pasture-generative.B.jpg" alt="Producto 19" />
+          <div class="product-info">
+            <span class="price">$ 78.500</span>
+            <p class="name">Depositos de vacio</p>
+            <span class="category">Ordeño</span>
+          </div>
+        </div>
+        <!--TARJETA-->
+        <div class="product-slide">
+          <img
+            src="../assets/milking-machine-close-up-milk-production-home-farm-replacement-manual-labor-with-automatic-machines.B.jpg"
+            alt="Producto 20" />
+          <div class="product-info">
+            <span class="price">$ 78.500</span>
+            <p class="name">Depositos de vacio</p>
+            <span class="category">Ordeño</span>
+          </div>
+        </div>
+        <!--TARJETA-->
+        <!--FLECHA-DE-DIRECCION-->
+      </div>
+      <button class="nav next">&#10095;</button>
+    </div>
+    <!--FLECHA-DE-DIRECCION-->
+    <!--CARRUSEL-->
+    <div class="carousel-dots">
+      <span class="dot active"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+    </div>
+    <!--CARRUSEL-->
+  </section>
+  <!--FIN-CUARTO-BLOQUE-->
+  <!--INICIO-QUINTO-BLOQUE-->
+  <div class="section-divider-a"></div>
+  <!--FIN-QUINTO-BLOQUE-->
+  <!--INICIO-SEXTO-BLOQUE-->
+  <section class="product-directory">
+    <div class="directory-container">
+      <!-- COLUMNA 1 -->
+      <div class="category-column">
+        <h3>Alimentacion y farmacia</h3>
+        <div>
+          <strong>Concentrados</strong>
+          <ul>
+            <li><a href="../pages/NuestrosProductos.html">Mascotas</a></li>
+            <li><a href="../pages/NuestrosProductos.html">Avicultura</a></li>
+            <li><a href="../pages/NuestrosProductos.html">Porcicultura</a></li>
+            <li><a href="../pages/NuestrosProductos.html">Ganaderia</a></li>
+            <li><a href="../pages/NuestrosProductos.html">Piscicultura</a></li>
+            <li><a href="../pages/NuestrosProductos.html">Otras especies</a></li>
+          </ul>
+        </div>
+        <div>
+          <strong>Productos veterinarios y otros</strong>
+          <ul>
+            <li><a href="../pages/NuestrosProductos.html">Farmacos</a></li>
+            <li><a href="../pages/NuestrosProductos.html">Manejo animal</a></li>
+          </ul>
+        </div>
+      </div>
+      <!-- COLUMNA 2 -->
+      <div class="category-column">
+        <h3>Ordeño</h3>
+        <div>
+          <strong>Equipos</strong>
+          <ul>
+            <li><a href="../pages/NuestrosProductos.html">Tanques</a></li>
+            <li><a href="../pages/NuestrosProductos.html">Equipo de ordeño</a></li>
+            <li><a href="../pages/NuestrosProductos.html">Otros equipos</a></li>
+          </ul>
+        </div>
+        <div>
+          <strong>Repuestos</strong>
+          <ul>
+            <li><a href="../pages/NuestrosProductos.html">Ordeño</a></li>
+            <li><a href="../pages/NuestrosProductos.html">Pulsacion</a></li>
+            <li><a href="../pages/NuestrosProductos.html">Vacio</a></li>
+            <li><a href="../pages/NuestrosProductos.html">Leche</a></li>
+            <li><a href="../pages/NuestrosProductos.html">Instalacion</a></li>
+            <li><a href="../pages/NuestrosProductos.html">Limpieza</a></li>
+          </ul>
+        </div>
+      </div>
+      <!-- COLUMNA 3 -->
+      <div class="category-column">
+        <h3>Electronicos</h3>
+        <div>
+          <strong>Ecografos</strong>
+          <ul>
+            <li><a href="../pages/NuestrosProductos.html">Referencias</a></li>
+            <li><a href="../pages/NuestrosProductos.html">Referencias</a></li>
+            <li><a href="../pages/NuestrosProductos.html">Referencias</a></li>
+            <li><a href="../pages/NuestrosProductos.html">Referencias</a></li>
+          </ul>
+        </div>
+        <div>
+          <strong>Humidimetros</strong>
+          <ul>
+            <li><a href="../pages/NuestrosProductos.html">Referencias</a></li>
+            <li><a href="../pages/NuestrosProductos.html">Referencias</a></li>
+          </ul>
+        </div>
+        <div>
+          <strong>Detectores de mastitis</strong>
+          <ul>
+            <li><a href="../pages/NuestrosProductos.html">Referencias</a></li>
+          </ul>
+        </div>
+        <div>
+          <strong>Detectores de celo</strong>
+          <ul>
+            <li><a href="../pages/NuestrosProductos.html">Referencias</a></li>
+          </ul>
+        </div>
+        <div>
+          <strong>Ultrasonidos</strong>
+          <ul>
+            <li><a href="../pages/NuestrosProductos.html">Referencias</a></li>
+          </ul>
+        </div>
+        <div>
+          <strong>Cercas electricas</strong>
+          <ul>
+            <li><a href="../pages/NuestrosProductos.html">Impulsores</a></li>
+            <li><a href="../pages/NuestrosProductos.html">Accesorios</a></li>
+          </ul>
+        </div>
+      </div>
+      <!-- COLUMNA 4 -->
+      <div class="category-column">
+        <h3>Higiene y salud</h3>
+        <div>
+          <strong>Detergentes</strong>
+          <ul>
+            <li><a href="../pages/NuestrosProductos.html">Referencias</a></li>
+          </ul>
+        </div>
+        <div>
+          <strong>Sellantes de pezones</strong>
+          <ul>
+            <li><a href="../pages/NuestrosProductos.html">Referencias</a></li>
+          </ul>
+        </div>
+        <div>
+          <strong>Otros</strong>
+          <ul>
+            <li><a href="../pages/NuestrosProductos.html">Referencias</a></li>
+          </ul>
+        </div>
+      </div>
+      <!-- COLUMNA 5 -->
+      <div class="category-column">
+        <h3>Dotaciones</h3>
+        <div>
+          <strong>Botas</strong>
+          <ul>
+            <li><a href="../pages/NuestrosProductos.html">Referencias</a></li>
+          </ul>
+        </div>
+        <div>
+          <strong>Otros</strong>
+          <ul>
+            <li><a href="../pages/NuestrosProductos.html">Referencias</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  </section>
+  <!--FIN-SEXTO-BLOQUE-->
+  <!--INICIO-SEPTIMO-BLOQUE-->
+  <div class="section-divider"></div>
+  <!--FIN-SEPTIMO-BLOQUE-->
+  <!--INICIO-FOOTER-->
+  <footer>
+    <div class="footer-container">
+      <div class="footer-left">
+        <div class="logo-footer">
           <img src="../assets/LogoHome.png" alt="Logo Temacol" />
           <div class="logo-text">
             <strong>Temacol</strong>
             <span>Eficiencia a tu servicio</span>
           </div>
         </div>
-
-        <nav class="navbar">
-          <a href="../index.html">Inicio</a>
-          <a href="../pages/NuestrosProductos.html" class="active">Nuestros productos</a>
-          <a href="../pages/ServicioEspecializado.html">Servicio especializado</a>
-          <a href="../pages/NuestroBlog.html">Nuestro blog</a>
-          <a href="../pages/QuienesSomos.html">¿Quiénes somos?</a>
-          <a href="../pages/Contacto.html">Contacto</a>
-          <a href="https://facebook.com/" target="_blank"><img src="../assets/LogoLogin.png" alt="Contacto"/></a>
-          <a href="https://facebook.com/" target="_blank"><img src="../assets/LogoCarrito.png" alt="Contacto"/></a>
-        </nav>
-      </div>
-    </header>
-    <!--PRIMERA SECCION-->
-<section class="product-categories">
-  <div class="categories-container">
-    <div class="categories">
-      <span>Alimentación y farmacia</span>
-      <span>Ordeño</span>
-      <span>Electrónicos</span>
-      <span>Higiene y salud</span>
-      <span>Dotaciones</span>
-    </div>
-
-    <div class="search-box">
-      <input type="text" placeholder="Buscar" />
-      <button><img src="../assets/LogoBuscar.png" alt="Buscar" /></button>
-    </div>
-  </div>
-</section>
-<!--SEGUNDA SECCION-->
-    <section class="hero">
-      <div class="hero-content">
-        <p class="hero-subtitle">Lorem Ipsum</p>
-        <h1>
-          <span class="orange">Lorem Ipsum</span><br />
-          es simplemente el<br />
-          texto de relleno
-        </h1>
-        <p class="hero-text">
+        <p>
           Lorem Ipsum es simplemente el texto de relleno de las imprentas y
           archivos de texto.
         </p>
-        <a href="#" class="hero-btn">Lorem Ipsum</a>
-      </div>
-    </section>
-    <!--TERCERA SECCION-PRODUCTOS-->
-    <section class="product-grid">
-  <div class="product-card">
-    <img src="../assets/cow-milking-facility-mechanized-milking-equipment.B.jpg" alt="Producto 1">
-    <h3>Concentrados</h3>
-    <a href="https://www.youtube.com" target="_blank" class="buy-button">Comprar ahora</a>
-  </div>
-  <div class="product-card">
-    <img src="../assets/milking-machine-close-up-milk-production-home-farm-replacement-manual-labor-with-automatic-machines.B.jpg" alt="Producto 2">
-    <h3>Sellantes de pezones</h3>
-    <a href="https://www.youtube.com" target="_blank" class="buy-button">Comprar ahora</a>
-  </div>
-  <div class="product-card">
-    <img src="../assets/close-up-view-legs-farmer-working-with-fresh-grass-animal-barn.B.jpg" alt="Producto 3">
-    <h3>Ecógrafos</h3>
-    <a href="https://www.youtube.com" target="_blank" class="buy-button">Comprar ahora</a>
-  </div>
-</section>
-<!--CUARTA SECCION-->
-<section class="best-sellers">
-  <p class="subtitle">CONOZCA</p>
-  <h2 class="title">Productos más vendidos</h2>
-
-  <div class="carousel-container">
-    <button class="nav prev">&#10094;</button>
-    <div class="carousel-track">
-      <!-- Ejemplo de tarjeta (duplicar para cliente 1 a 20) -->
-      <div class="product-slide">
-        <img src="../assets/cattle-grazing-meadow.B.jpg" alt="Producto 1" />
-        <div class="product-info">
-          <span class="price">$ 78.500</span>
-          <p class="name">Depositos de vacio</p>
-          <span class="category">Ordeño</span>
+        <hr />
+        <div class="social-icons">
+          <a href="https://facebook.com/" target="_blank"><img src="../assets/LogoFacebook.png" alt="Facebook" /></a>
+          <a href="https://instagram.com/" target="_blank"><img src="../assets/LogoInstagram.png" alt="Instagram" /></a>
+          <a href="https://x.com/" target="_blank"><img src="../assets/LogoX.png" alt="Twitter" /></a>
+          <a href="https://tiktok.com/" target="_blank"><img src="../assets/LogoTiktok.png" alt="TikTok" /></a>
+          <a href="https://youtube.com/" target="_blank"><img src="../assets/LogoYoutube.png" alt="YouTube" /></a>
         </div>
       </div>
-            <div class="product-slide">
-        <img src="../assets/close-up-view-legs-farmer-working-with-fresh-grass-animal-barn.B.jpg" alt="Producto 2" />
-        <div class="product-info">
-          <span class="price">$ 78.500</span>
-          <p class="name">Depositos de vacio</p>
-          <span class="category">Ordeño</span>
-        </div>
-      </div>
-            <div class="product-slide">
-        <img src="../assets/cow-milking-facility-mechanized-milking-equipment.B.jpg" alt="Producto 3" />
-        <div class="product-info">
-          <span class="price">$ 78.500</span>
-          <p class="name">Depositos de vacio</p>
-          <span class="category">Ordeño</span>
-        </div>
-      </div>
-            <div class="product-slide">
-        <img src="../assets/cown-pasture-generative.B.jpg" alt="Producto 4" />
-        <div class="product-info">
-          <span class="price">$ 78.500</span>
-          <p class="name">Depositos de vacio</p>
-          <span class="category">Ordeño</span>
-        </div>
-      </div>
-            <div class="product-slide">
-        <img src="../assets/cow-pasture-generative.B.jpg" alt="Producto 5" />
-        <div class="product-info">
-          <span class="price">$ 78.500</span>
-          <p class="name">Depositos de vacio</p>
-          <span class="category">Ordeño</span>
-        </div>
-      </div>
-            <div class="product-slide">
-        <img src="../assets/cows-eating-lush-grass-green-field-front-fuji-mountain-japan.B.jpg" alt="Producto 6" />
-        <div class="product-info">
-          <span class="price">$ 78.500</span>
-          <p class="name">Depositos de vacio</p>
-          <span class="category">Ordeño</span>
-        </div>
-      </div>
-            <div class="product-slide">
-        <img src="../assets/domestic-animals-eating-hay-cattle-farm.B.jpg" alt="Producto 7" />
-        <div class="product-info">
-          <span class="price">$ 78.500</span>
-          <p class="name">Depositos de vacio</p>
-          <span class="category">Ordeño</span>
-        </div>
-      </div>
-            <div class="product-slide">
-        <img src="../assets/herd-cows-grazing-pasture-daytime.B.jpg" alt="Producto 8" />
-        <div class="product-info">
-          <span class="price">$ 78.500</span>
-          <p class="name">Depositos de vacio</p>
-          <span class="category">Ordeño</span>
-        </div>
-      </div>
-            <div class="product-slide">
-        <img src="../assets/herd-cows-producing-milk-gruyere-cheese-france-spring.B.jpg" alt="Producto 9" />
-        <div class="product-info">
-          <span class="price">$ 78.500</span>
-          <p class="name">Depositos de vacio</p>
-          <span class="category">Ordeño</span>
-        </div>
-      </div>
-            <div class="product-slide">
-        <img src="../assets/herdn-cows-producing-milk-gruyere-cheese-france-spring.B.jpg" alt="Producto 10" />
-        <div class="product-info">
-          <span class="price">$ 78.500</span>
-          <p class="name">Depositos de vacio</p>
-          <span class="category">Ordeño</span>
-        </div>
-      </div>
-            <div class="product-slide">
-        <img src="../assets/milking-machine-close-up-milk-production-home-farm-replacement-manual-labor-with-automatic-machines.B.jpg" alt="Producto 11" />
-        <div class="product-info">
-          <span class="price">$ 78.500</span>
-          <p class="name">Depositos de vacio</p>
-          <span class="category">Ordeño</span>
-        </div>
-      </div>
-            <div class="product-slide">
-        <img src="../assets/panoramic-view-black-white-cow-green-grass.B.jpg" alt="Producto 12" />
-        <div class="product-info">
-          <span class="price">$ 78.500</span>
-          <p class="name">Depositos de vacio</p>
-          <span class="category">Ordeño</span>
-        </div>
-      </div>
-            <div class="product-slide">
-        <img src="../assets/panoramic-view-brown-cows-french-country.B.jpg" alt="Producto 13" />
-        <div class="product-info">
-          <span class="price">$ 78.500</span>
-          <p class="name">Depositos de vacio</p>
-          <span class="category">Ordeño</span>
-        </div>
-      </div>
-            <div class="product-slide">
-        <img src="../assets/photorealistic-view-cow-grazing-outdoors.B.jpg" alt="Producto 14" />
-        <div class="product-info">
-          <span class="price">$ 78.500</span>
-          <p class="name">Depositos de vacio</p>
-          <span class="category">Ordeño</span>
-        </div>
-      </div>
-            <div class="product-slide">
-        <img src="../assets/cattle-grazing-meadow.B.jpg" alt="Producto 15" />
-        <div class="product-info">
-          <span class="price">$ 78.500</span>
-          <p class="name">Depositos de vacio</p>
-          <span class="category">Ordeño</span>
-        </div>
-      </div>
-            <div class="product-slide">
-        <img src="../assets/close-up-view-legs-farmer-working-with-fresh-grass-animal-barn.B.jpg" alt="Producto 16" />
-        <div class="product-info">
-          <span class="price">$ 78.500</span>
-          <p class="name">Depositos de vacio</p>
-          <span class="category">Ordeño</span>
-        </div>
-      </div>
-            <div class="product-slide">
-        <img src="../assets/cow-milking-facility-mechanized-milking-equipment.B.jpg" alt="Producto 17" />
-        <div class="product-info">
-          <span class="price">$ 78.500</span>
-          <p class="name">Depositos de vacio</p>
-          <span class="category">Ordeño</span>
-        </div>
-      </div>
-            <div class="product-slide">
-        <img src="../assets/cown-pasture-generative.B.jpg" alt="Producto 18" />
-        <div class="product-info">
-          <span class="price">$ 78.500</span>
-          <p class="name">Depositos de vacio</p>
-          <span class="category">Ordeño</span>
-        </div>
-      </div>
-            <div class="product-slide">
-        <img src="../assets/cow-pasture-generative.B.jpg" alt="Producto 19" />
-        <div class="product-info">
-          <span class="price">$ 78.500</span>
-          <p class="name">Depositos de vacio</p>
-          <span class="category">Ordeño</span>
-        </div>
-      </div>
-            <div class="product-slide">
-        <img src="../assets/milking-machine-close-up-milk-production-home-farm-replacement-manual-labor-with-automatic-machines.B.jpg" alt="Producto 20" />
-        <div class="product-info">
-          <span class="price">$ 78.500</span>
-          <p class="name">Depositos de vacio</p>
-          <span class="category">Ordeño</span>
-        </div>
-      </div>
-    </div>
-    <button class="nav next">&#10095;</button>
-  </div>
-
-  <div class="carousel-dots">
-    <span class="dot active"></span>
-    <span class="dot"></span>
-    <span class="dot"></span>
-    <span class="dot"></span>
-    <span class="dot"></span>
-    <span class="dot"></span>
-    <span class="dot"></span>
-  </div>
-</section>
-    <!--QUINTA SECCION-->
-    <div class="section-divider-a"></div>
-    <!--SEXTA SESION-->
-    <section class="product-directory">
-  <div class="directory-container">
-    <!-- COLUMNA 1 -->
-    <div class="category-column">
-      <h3>Alimentacion y farmacia</h3>
-      <div>
-        <strong>Concentrados</strong>
+      <div class="footer-right">
+        <h3>Links de interes</h3>
         <ul>
-          <li><a href="../pages/NuestrosProductos.html">Mascotas</a></li>
-          <li><a href="../pages/NuestrosProductos.html">Avicultura</a></li>
-          <li><a href="../pages/NuestrosProductos.html">Porcicultura</a></li>
-          <li><a href="../pages/NuestrosProductos.html">Ganaderia</a></li>
-          <li><a href="../pages/NuestrosProductos.html">Piscicultura</a></li>
-          <li><a href="../pages/NuestrosProductos.html">Otras especies</a></li>
-        </ul>
-      </div>
-      <div>
-        <strong>Productos veterinarios y otros</strong>
-        <ul>
-          <li><a href="../pages/NuestrosProductos.html">Farmacos</a></li>
-          <li><a href="../pages/NuestrosProductos.html">Manejo animal</a></li>
+          <li><a href="../index.html">Inicio</a></li>
+          <li>
+            <a href="../pages/NuestrosProductos.html">Nuestros productos</a>
+          </li>
+          <li>
+            <a href="../pages/ServicioEspecializado.html">Servicio especializado</a>
+          </li>
+          <li><a href="../pages/NuestroBlog.html">Nuestro blog</a></li>
+          <li><a href="../pages/QuienesSomos.html">¿Quiénes somos?</a></li>
+          <li><a href="../pages/Contacto.html">Contacto</a></li>
         </ul>
       </div>
     </div>
 
-    <!-- COLUMNA 2 -->
-    <div class="category-column">
-      <h3>Ordeño</h3>
-      <div>
-        <strong>Equipos</strong>
-        <ul>
-          <li><a href="../pages/NuestrosProductos.html">Tanques</a></li>
-          <li><a href="../pages/NuestrosProductos.html">Equipo de ordeño</a></li>
-          <li><a href="../pages/NuestrosProductos.html">Otros equipos</a></li>
-        </ul>
-      </div>
-      <div>
-        <strong>Repuestos</strong>
-        <ul>
-          <li><a href="../pages/NuestrosProductos.html">Ordeño</a></li>
-          <li><a href="../pages/NuestrosProductos.html">Pulsacion</a></li>
-          <li><a href="../pages/NuestrosProductos.html">Vacio</a></li>
-          <li><a href="../pages/NuestrosProductos.html">Leche</a></li>
-          <li><a href="../pages/NuestrosProductos.html">Instalacion</a></li>
-          <li><a href="../pages/NuestrosProductos.html">Limpieza</a></li>
-        </ul>
+    <div class="footer-bottom">
+      <p>&copy; 2025 EdwinAGalvisP</p>
+      <div class="footer-links">
+        <a href="#">Terminos y condiciones</a>
+        <a href="#">Políticas de privacidad</a>
       </div>
     </div>
+  </footer>
+  <!--FIN-FOOTER-->
+  <!--INICIO-BOTON-FLOTANTE-WHATSAPP-->
+  <a href="https://wa.me/573213902675" class="whatsapp-icon" target="_blank" aria-label="Conéctate por WhatsApp">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/WhatsApp_icon.png" alt="WhatsApp" />
+  </a>
+  <!--FINAL-BOTON-FLOTANTE-WHATSAPP-->
+  <script src="../scripts/carouselbestsellers.js"></script>
+</body>
 
-    <!-- COLUMNA 3 -->
-    <div class="category-column">
-      <h3>Electronicos</h3>
-      <div>
-        <strong>Ecografos</strong>
-        <ul>
-          <li><a href="../pages/NuestrosProductos.html">Referencias</a></li>
-          <li><a href="../pages/NuestrosProductos.html">Referencias</a></li>
-          <li><a href="../pages/NuestrosProductos.html">Referencias</a></li>
-          <li><a href="../pages/NuestrosProductos.html">Referencias</a></li>
-        </ul>
-      </div>
-      <div>
-        <strong>Humidimetros</strong>
-        <ul>
-          <li><a href="../pages/NuestrosProductos.html">Referencias</a></li>
-          <li><a href="../pages/NuestrosProductos.html">Referencias</a></li>
-        </ul>
-      </div>
-      <div>
-        <strong>Detectores de mastitis</strong>
-        <ul>
-          <li><a href="../pages/NuestrosProductos.html">Referencias</a></li>
-        </ul>
-      </div>
-      <div>
-        <strong>Detectores de celo</strong>
-        <ul>
-          <li><a href="../pages/NuestrosProductos.html">Referencias</a></li>
-        </ul>
-      </div>
-      <div>
-        <strong>Ultrasonidos</strong>
-        <ul>
-          <li><a href="../pages/NuestrosProductos.html">Referencias</a></li>
-        </ul>
-      </div>
-      <div>
-        <strong>Cercas electricas</strong>
-        <ul>
-          <li><a href="../pages/NuestrosProductos.html">Impulsores</a></li>
-          <li><a href="../pages/NuestrosProductos.html">Accesorios</a></li>
-        </ul>
-      </div>
-    </div>
-
-    <!-- COLUMNA 4 -->
-    <div class="category-column">
-      <h3>Higiene y salud</h3>
-      <div>
-        <strong>Detergentes</strong>
-        <ul>
-          <li><a href="../pages/NuestrosProductos.html">Referencias</a></li>
-        </ul>
-      </div>
-      <div>
-        <strong>Sellantes de pezones</strong>
-        <ul>
-          <li><a href="../pages/NuestrosProductos.html">Referencias</a></li>
-        </ul>
-      </div>
-      <div>
-        <strong>Otros</strong>
-        <ul>
-          <li><a href="../pages/NuestrosProductos.html">Referencias</a></li>
-        </ul>
-      </div>
-    </div>
-
-    <!-- COLUMNA 5 -->
-    <div class="category-column">
-      <h3>Dotaciones</h3>
-      <div>
-        <strong>Botas</strong>
-        <ul>
-          <li><a href="../pages/NuestrosProductos.html">Referencias</a></li>
-        </ul>
-      </div>
-      <div>
-        <strong>Otros</strong>
-        <ul>
-          <li><a href="../pages/NuestrosProductos.html">Referencias</a></li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</section>
-</section>
-    <!--SEPTIMA SESION-->
-    <div class="section-divider"></div>
-    <!--PIE DE PAGINA-->
-    <footer>
-      <div class="footer-container">
-        <div class="footer-left">
-          <div class="logo-footer">
-            <img src="../assets/LogoHome.png" alt="Logo Temacol" />
-            <div class="logo-text">
-              <strong>Temacol</strong>
-              <span>Eficiencia a tu servicio</span>
-            </div>
-          </div>
-          <p>
-            Lorem Ipsum es simplemente el texto de relleno de las imprentas y
-            archivos de texto.
-          </p>
-          <hr />
-          <div class="social-icons">
-            <a href="https://facebook.com/" target="_blank"
-              ><img src="../assets/LogoFacebook.png" alt="Facebook"
-            /></a>
-            <a href="https://instagram.com/" target="_blank"
-              ><img src="../assets/LogoInstagram.png" alt="Instagram"
-            /></a>
-            <a href="https://x.com/" target="_blank"
-              ><img src="../assets/LogoX.png" alt="Twitter"
-            /></a>
-            <a href="https://tiktok.com/" target="_blank"
-              ><img src="../assets/LogoTiktok.png" alt="TikTok"
-            /></a>
-            <a href="https://youtube.com/" target="_blank"
-              ><img src="../assets/LogoYoutube.png" alt="YouTube"
-            /></a>
-          </div>
-        </div>
-        <div class="footer-right">
-          <h3>Links de interes</h3>
-          <ul>
-            <li><a href="../index.html">Inicio</a></li>
-            <li>
-              <a href="../pages/NuestrosProductos.html">Nuestros productos</a>
-            </li>
-            <li>
-              <a href="../pages/ServicioEspecializado.html"
-                >Servicio especializado</a
-              >
-            </li>
-            <li><a href="../pages/NuestroBlog.html">Nuestro blog</a></li>
-            <li><a href="../pages/QuienesSomos.html">¿Quiénes somos?</a></li>
-            <li><a href="../pages/Contacto.html">Contacto</a></li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="footer-bottom">
-        <p>&copy; 2025 EdwinAGalvisP</p>
-        <div class="footer-links">
-          <a href="#">Terminos y condiciones</a>
-          <a href="#">Políticas de privacidad</a>
-        </div>
-      </div>
-    </footer>
-
-    <a
-      href="https://wa.me/573213902675"
-      class="whatsapp-icon"
-      target="_blank"
-      aria-label="Conéctate por WhatsApp"
-    >
-      <img
-        src="https://upload.wikimedia.org/wikipedia/commons/5/5e/WhatsApp_icon.png"
-        alt="WhatsApp"
-      />
-    </a>
-    
-    <script src="../scripts/carouselbestsellers.js"></script>
-  </body>
 </html>
