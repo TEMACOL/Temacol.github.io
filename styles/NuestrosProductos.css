@@ -13,6 +13,7 @@ body {
 }
 
 /* Header fijo */
+
 header {
   position: fixed;
   top: 0;
@@ -129,7 +130,7 @@ header {
 
 /*Primer bloque*/
 
-.product-categories {
+/*.product-categories {
   background-color: #1b1b1f;
   padding: 2rem 1rem;
   width: 100%;
@@ -163,6 +164,67 @@ header {
 
 .categories span:hover {
   color: #ffaa33;
+}*/
+
+/*Primer bloque adicional*/
+
+.dropdown-directory {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* centrado en lugar de separación amplia */
+  gap: 2rem; /* puedes usar 0.5rem si aún hay mucho espacio */
+  padding: 3rem 1rem;
+  background-color: #1b1b1f;
+  color: white;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.dropdown-column {
+  flex: 0 1 160px; /* controla que no se expanda demasiado */
+  margin: 0 0.5rem; /* más controlado que el gap global */
+}
+
+.dropdown-toggle {
+  background: none;
+  color: #ff9e00;
+  border: none;
+  font-weight: bold;
+  font-size: 1.1rem;
+  cursor: pointer;
+  margin-bottom: 0.5rem;
+  transition: color 0.3s;
+  white-space: nowrap;
+}
+
+.dropdown-toggle:hover {
+  color: #ffaa33;
+}
+
+.dropdown-content {
+  list-style: none;
+  padding: 0;
+  display: none;
+  flex-direction: column;
+}
+
+.dropdown-content li {
+  margin: 0.3rem 0;
+}
+
+.dropdown-content a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: color 0.2s;
+}
+
+.dropdown-content a:hover {
+  color: #ff9e00;
+}
+
+.dropdown-column.active .dropdown-content {
+  display: flex;
 }
 
 /*Segundo bloque*/
@@ -583,7 +645,7 @@ footer {
   height: auto;
 }
 
-/* REsponsive */
+/* Responsive */
 
 @media (max-width: 1024px) {
   .search-box-header {
@@ -614,6 +676,12 @@ footer {
     max-width: 300px;
   }
 
+  .dropdown-grid {
+    gap: 1rem;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
   .product-card {
     max-width: 90%;
   }
@@ -631,6 +699,25 @@ footer {
   .directory-container {
     flex-direction: column;
     gap: 3rem;
+  }
+
+  .dropdown-directory {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.5rem;
+  }
+
+  .dropdown-column {
+    width: 100%;
+    margin: 0;
+  }
+
+  .dropdown-toggle {
+    font-size: 1rem;
+  }
+
+  .dropdown-content a {
+    font-size: 0.95rem;
   }
 }
 
